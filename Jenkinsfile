@@ -53,7 +53,7 @@ pipeline {
 		stage('Push Docker Image') {
 			steps {
 				script {
-					docker.withRegistry('kubernlinks/currency-exchange-devops', 'dockerhub') {
+					docker.withRegistry('', 'kubernlinks/****** (dockerhub)') {
 						dockerImage.push();
 					    dockerImage.push('latest');			    
 				    }
